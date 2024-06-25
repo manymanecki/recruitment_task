@@ -2,15 +2,15 @@
 Thank you very much for giving me opportunity to take part in this recruitment step, that was lots of fun.
 
 # Implemented features
-[X] - Summary import
-[X] - Description import
-[X] - Priority import
-[X] - Status import
-[X] - Comments import
-[X] - Basic error handling
-[X] - Custom logger
-[X] - Custom parser
-[X] - Custom properties reader
+- [X] Summary import
+- [X] Description import
+- [X] Priority import
+- [X] Status import
+- [X] Comments import
+- [X] Basic error handling
+- [X] Custom logger
+- [X] Custom parser
+- [X] Custom properties reader
 
 # Additional dependencies
 In order to not reinvent the wheel once again, I have decided to import the following libraries:
