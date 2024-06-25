@@ -1,18 +1,22 @@
-# Intro
-Task is about syncing Jira tickets from one project to another within one Jira instance.
-Please create Jira instance (its free) where you can create 2 projects that are going to be synchronized.
-https://www.atlassian.com/try/cloud/signup
+# Few words
+Thank you very much for giving me opportunity to take part in this recruitment step, that was lots of fun.
 
-# Task
-1. Fork this repository and send link to it to radek@getint.io after task completion
-2. Implement `JiraSynchronizer.moveTasksToOtherProject` method. Search for 5 tickets in one project, and move them (recreate them) to other project within same Jira instance.
-When syncing tickets please include following fields:
-- summary (title)
-- description
-- priority
-Bonus points for syncing status and comments.
-3. Please complete task within 7 days from the day you received it
-4. Pleaase use provided library (apache) for HTTP communication
-  
-API endpoints exposed by Jira you can find here:
-https://developer.atlassian.com/cloud/jira/software/rest/
+# How to boot locally?
+1. Fork this repository
+2. Install required dependencies
+3. Create application.yaml inside resources folder
+4. Structure the configuration file as required, that is:
+
+```
+jira:
+  username: (username / email)
+  token: (API token to the JIRA instance)
+  project:
+    url: (URL to JIRA instance)
+    source: (Project KEY from which to import tickets, eg. KAN / CIB etc.)
+    destination: (same as above, but to which import)
+```
+
+5. Run the main class and enjoy:)
+
+Do not hesitate to get in touch with me @ jakub.pawlowski00@gmail.com
